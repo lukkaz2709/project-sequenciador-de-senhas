@@ -1,0 +1,1 @@
+# project-sequenciador-de-senhas
