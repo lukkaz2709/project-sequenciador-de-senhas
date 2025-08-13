@@ -85,31 +85,8 @@ src/
 
 ---
 
-## 📊 Fluxograma de Funcionamento
 
-```mermaid
-flowchart TD
-    A[Usuário abre o app] --> B[Home.tsx renderiza BatLogo e BatButton]
-    B --> C[Usuário clica em "GENERATE"]
-    C --> D[BatButton chama GeneratePass()]
-    D --> E[Senha gerada é salva no estado pass]
-    E --> F[BatTextInput exibe a senha]
-    F --> G[Usuário clica em "⚡ COPY"]
-    G --> H{Senha existe?}
-    H -- Não --> I[Ignora ação]
-    H -- Sim --> J[expo-clipboard copia senha]
-    J --> K[Exibe alerta de confirmação]
-```
 
----
 
-## 🛠 Melhorias Futuras
-- Corrigir bug no `BatTextInput` (`value={props.pass}`).
-- Adicionar opções para definir tamanho e complexidade da senha.
-- Substituir alert por Toast para melhor UX.
-- Implementar testes automatizados.
 
----
 
-## 📜 Licença
-Este projeto é distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
