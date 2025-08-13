@@ -6,35 +6,38 @@ import GeneratePass from '../../services/passwordService';
 import * as Clipboard from 'expo-clipboard';
 
 export function BatButton() {
-    const [pass, setPass] = useState('');
+  const [pass, setPass] = useState('')
 
-    function handleGenerateButton(){
-        let generateToken = GeneratePass();
-        setPass(generateToken);
-    }
+  function handleGenerateButton() {
+    let generateToken  = GeneratePass()
+    setPass(generateToken)
+  }
 
-    function handleCopyButton() {
-        Clipboard.setStringAsync(pass);
-    }
+  async function handleCopyButton(){
+  if (!pass) return;
+  await Clipboard.setStringAsync(pass);
+  alert('Senha copiada para a área de transferência!');
+}
 
-     return (
+
+  return (
     <>
+      <BatTextInput pass={pass}/>
+      
+      <Pressable
+        onPress={handleGenerateButton}
+        style={styles.button}
+      >
+        <Text style={styles.text}>GENERATE</Text>
+      </Pressable>
 
-    <BatTextInput pass={pass}/>
-    
-        <Pressable 
-            onPress={handleGenerateButton}
-            style={styles.button}
-            >
-            <Text style={styles.text}>⚡ GENERATE</Text>
-        </Pressable>
+      <Pressable
+        onPress={handleCopyButton}
+        style={styles.button}
+      >
+        <Text style={styles.text}>⚡ COPY</Text>
+      </Pressable>
 
-        <Pressable 
-            onPress={handleCopyButton}
-            style={styles.button}
-            >
-            <Text style={styles.text}>⚡ COPY</Text>
-        </Pressable>
     </>
   );
 }

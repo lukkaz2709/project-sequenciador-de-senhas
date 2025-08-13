@@ -1,9 +1,8 @@
 import React from "react";
-import { View, Text} from "react-native";
+import { View } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 import styles from "./Style";
 import { BatLogo } from "../../components/BatLogo/BatLogo";
-import { BatTextInput } from "../../components/BatTextInput/batTextInput";
 import { BatButton } from "../../components/BatButton/batButton";
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Text, Image } from 'react-native';
 import { styles } from './BatLogoStyles';
  
 
@@ -12,7 +12,7 @@ export function BatLogo() {
       <Image source={require('../../../assets/bat-logo.png')} 
              style={{ 
               resizeMode: 'contain', 
-              height: 300, 
+              height: 200, 
               }}
       />
     </>
