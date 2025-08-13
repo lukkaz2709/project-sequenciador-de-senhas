@@ -3,7 +3,7 @@
 Gerador de senhas seguro e rápido com o tema do **Batman**, desenvolvido em **React Native** com **Expo**.  
 Permite criar senhas aleatórias e copiá-las para a área de transferência com apenas um toque.
 
-<img src="./assets/bat-logo.png" alt="Bat Pass Logo" width="250" style="display:block;margin:auto"/>
+<img src=".github/assets/bat-logo.png" alt="Bat Pass Logo" width="250" style="display:block;margin:auto"/>
 
 ---
 
@@ -11,7 +11,7 @@ Permite criar senhas aleatórias e copiá-las para a área de transferência com
 
 | Tela Inicial | Senha Gerada | Cópia de Senha |
 |--------------|--------------|----------------|
-| ![Tela Inicial](./docs/home.jpeg) | ![Gerar Senha](./docs/generate.jpeg) | ![Copiar Senha](./docs/copy.jpeg) |
+| ![Tela Inicial](.github/assets/TelaInicial.jpeg) | ![Gerar Senha](.github/assets/TelaSenhaGerada.jpeg) | ![Copiar Senha](.github/assets/TelaAlert.jpeg) |
 
 ---
 
